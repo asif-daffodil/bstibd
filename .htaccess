@@ -8,4 +8,4 @@ RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 RewriteRule .* - [L,R=404]
 
 # NOTE! FOR APACHE ON WINDOWS: Add [NC] to RewriteCond like this:
-# RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
